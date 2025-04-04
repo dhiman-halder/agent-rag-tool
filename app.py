@@ -100,7 +100,7 @@ app = workflow.compile(checkpointer=checkpointer)
 
 # Execute the workflow
 final_state = app.invoke(
-    {"messages": [HumanMessage(content="What is the weather in Los Angeles?")]},
+    {"messages": [HumanMessage(content="Explain what a list is in Python and What is the weather in Los Angeles?")]},
     config={"configurable": {"thread_id": 42}}
 )
 
