@@ -1,6 +1,6 @@
 # AI Agent RAG Tool
 
-This project demonstrates the use of LangGraph to create a agent that integrates tools like Tavily search, RAG fetch and OpenAI's GPT models.
+This project demonstrates the use of LangGraph to create a agent that integrates with tools like Tavily search and a Vector DB retriever.
 
 ## Requirements
 - Python 3.8 or higher
