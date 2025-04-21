@@ -33,7 +33,7 @@ search = TavilySearchResults(max_results=1)
 def retrieve_context(query: str):
     """Search for relevant documents."""
     # Example URL configuration
-    print('tool called')
+    print('retrieve_context')
     urls = [
         "https://docs.python.org/3/tutorial/index.html",
         "https://realpython.com/python-basics/",
@@ -76,6 +76,7 @@ def should_continue(state: MessagesState) -> Literal["tools", END]:
 
 # Function that invokes the model
 def call_model(state: MessagesState):
+    print('call_model')
     messages = state['messages']
     response = model.invoke(messages)
     return {"messages": [response]}  # Returns as a list to add to the state
